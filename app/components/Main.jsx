@@ -48,6 +48,7 @@ const Main = () => {
                     placeholder="Write something..."
                     placeholderTextColor="#eee"
                     underlineColorAndroid="transparent"
+                    onSubmitEditing={(keyPress) => addNote(keyPress)}
                 >
                 </TextInput>
             </View>
