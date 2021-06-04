@@ -45,7 +45,7 @@ const Main = () => {
                     onChangeText={(userInput) => setInputVal(userInput)}
                     value={inputVal}
                     style={styles.textInput}
-                    placeholder="> add something rad..."
+                    placeholder="Write something..."
                     placeholderTextColor="#eee"
                     underlineColorAndroid="transparent"
                 >
