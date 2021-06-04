@@ -33,7 +33,7 @@ const Main = () => {
     return (
         <View style={styles.container}>
             <View style={styles.header}>
-                <Text style={styles.headerText}>To Do's yea!</Text>
+                <Text style={styles.headerText}>To Do List</Text>
             </View>
             <ScrollView style={styles.scrollContainer}>
                 {notes.map((item, i) => (
