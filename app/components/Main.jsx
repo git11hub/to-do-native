@@ -17,7 +17,7 @@ const Main = () => {
         if (inputVal.length) {
             const d = new Date();
             const payload = {
-                date: `${d.getMonth()}/${d.getDate()}/${d.getFullYear()}`,
+                date: `${d.getDate()}/${d.getMonth()+1}/${d.getFullYear()}`,
                 note: inputVal,
             }            
             setNotes([payload, ...notes]);
@@ -29,6 +29,7 @@ const Main = () => {
         notes.splice(i, 1);
         setNotes([...notes]);
     }, [notes]);
+
     
     return (
         <View style={styles.container}>
@@ -112,7 +113,7 @@ const styles = StyleSheet.create({
     },
     addButtonText: {
         color: '#ffd700',
-        fontSize: 26,
+        fontSize: 50,
         fontWeight: "700",
         top: 20,
     },

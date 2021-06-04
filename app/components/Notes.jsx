@@ -4,11 +4,13 @@ import {
     Text,
     View,
     TouchableOpacity,
+    ScrollView,
 } from 'react-native';
 
 const Note = ({ data, onDelete }) => {
     const { date, note } = data;
-    return(
+    return (
+
         <View style={styles.note}>
             <Text style={styles.noteText}>{date}</Text>
             <Text style={styles.noteText}>{note}</Text>
@@ -17,6 +19,7 @@ const Note = ({ data, onDelete }) => {
                 <Text style={styles.noteDeleteText}>X</Text>
             </TouchableOpacity>
         </View>
+
     );
 };
 
